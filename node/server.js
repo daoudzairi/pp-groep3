@@ -1,10 +1,22 @@
 const express = require('express');
 const path = require('path');
 const mysql = require('mysql2');
+
 const app = express();
 const port = 3000;
 
 const connection = mysql.createConnection(require('./config.json'));
+
+app.get('/getProducts', (req, res) => {
+    connection.query(
+        'SELECT * FROM `tblProduct`',
+        function(err, results, fields) {
+            console.log(results); // results contains rows returned by server
+            console.log(fields); // fields contains extra meta data about results, if available
+            res.send(results);
+        }
+    );
+});
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../index.html'));
@@ -51,4 +63,5 @@ app.use((req, res) => {
     res.status(404).json({msg: "Could not find specified file."});
 });
 
-app.listen(port, () => console.log(`Server listening on port ${port}!`));
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+
