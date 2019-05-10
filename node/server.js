@@ -46,6 +46,7 @@ app.get('/api/search/genre=:genre', (req, res) => {
     })
 });
 
+// Return 404 ERROR als get request geen match vindt
 app.use((req, res) => {
     res.status(404).json({msg: "Could not find specified file."});
 });
