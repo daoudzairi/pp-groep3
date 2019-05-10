@@ -14,10 +14,7 @@
   "author": "groep 3",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "cookies": "^0.7.3",
-=======
->>>>>>> origin/Tischa
     "express": "^4.16.4",
     "mysql2": "^1.6.5",
     "nodemon": "^1.19.0",

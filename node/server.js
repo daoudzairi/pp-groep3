@@ -1,7 +1,6 @@
 const express = require('express');
 const path = require('path');
 const mysql = require('mysql2');
-<<<<<<< HEAD
 const config = require('./config');
 const app = express();
 const port = 3000;
@@ -13,13 +12,10 @@ const connection = mysql.createConnection({
     database: config.database
 });
 
-
-=======
 const app = express();
 const port = 3000;
 
 const connection = mysql.createConnection(require('./config.json'));
->>>>>>> origin/Tischa
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../index.html'));
@@ -79,7 +75,4 @@ app.get('/getProducts', (req, res) => {
 });
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
-<<<<<<< HEAD
-=======
 app.listen(port, () => console.log(`Server listening on port ${port}!`));
->>>>>>> origin/Tischa
