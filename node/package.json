@@ -1,0 +1,19 @@
+{
+  "name": "groep3",
+  "version": "1.0.0",
+  "description": "Web project van Groep 3",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "fullstack",
+    "js"
+  ],
+  "author": "groep 3",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
