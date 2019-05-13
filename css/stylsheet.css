@@ -4,4 +4,27 @@
     background-position: left;
     background-size: cover;
     background-attachment: fixed;
+    opacity: 0.85;
+}
+
+.vh-50{
+    height: 50vh;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.card-text{
+    font-size: 14px !important;
+}
+
+.card-title{
+    font-size: 15px !important;
+}
+
+.card{
+    background-color: #eef0f2;
+
+    width: 23%;
 }
