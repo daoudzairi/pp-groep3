@@ -8,10 +8,18 @@
     text-align: center;
   }
 
+  .navigatie li 
+  {
+      color: white;
+  }
+  
+
   .navigatie
   {
       background-color: #060c21;
+      color: white;
   }
-  
+
+
 
 
